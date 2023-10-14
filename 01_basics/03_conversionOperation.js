@@ -64,7 +64,31 @@ num1 = num2 = num3 = 2 + 2 //though its bad way to write, code readability is im
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+// *********************** Memory ***********************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myGame = "Cricket"
+
+let anotherGame = myGame
+anotherGame = "Football"
+
+console.log(myGame);
+console.log(anotherGame);
+
+let user1 = {
+    email: "user1@gmail.com",
+    upi: "u1.ybl"
+} 
+
+let user2 = user1
+
+user2.email = "abhi@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);

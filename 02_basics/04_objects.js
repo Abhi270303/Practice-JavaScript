@@ -48,9 +48,36 @@ const users = [
 users[1].email
 // console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // returns keys in array
-console.log(Object.values(tinderUser)); // returns values in array
-console.log(Object.entries(tinderUser)); // returns keys:value in array
+// console.log(Object.keys(tinderUser)); // returns keys in array
+// console.log(Object.values(tinderUser)); // returns values in array
+// console.log(Object.entries(tinderUser)); // returns keys:value in array
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //checks if property is avialable or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //checks if property is avialable or not
 
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// JSON aisa dikhta hai
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// API object ya array kisi bhi form me ho sakta hai
+[
+    {},
+    {},
+    {}
+]

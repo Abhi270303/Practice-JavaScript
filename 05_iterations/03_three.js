@@ -37,4 +37,4 @@ const myObject = {
 // for (const [key, value] of myObject) {
 //     console.log(key, ':-', value);
     
-// }
+// } // objects are not iterable in this way, there is different way

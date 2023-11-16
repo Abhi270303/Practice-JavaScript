@@ -13,24 +13,29 @@
 <script>
     
     
-    const sayDate = function(str){
+    // const sayDate = function(str){
+    //     console.log(str, Date.now());
+    // }
+
+    
+
+    // clearInterval(intervalId)
+    let intervalId ;
+    
+    document.querySelector('#start').addEventListener('click', function(){
+        const sayDate = function(str){
         console.log(str, Date.now());
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
-
-    // clearInterval(intervalId)
-
-    document.querySelector('#start').addEventListener('click', function(){
-    //     const sayDate = function(str){
-    //     console.log(str, Date.now());
-    // }
-    // const intervalId = setInterval(sayDate, 1000, "hi")
+    if (!intervalId) {
+        intervalId = setInterval(sayDate, 1000, "hi")
+    }
 
     })
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearInterval(intervalId)
+        clearInterval(intervalId);
+        intervalId = null;
         console.log("STOPPED")
     })
 </script>
